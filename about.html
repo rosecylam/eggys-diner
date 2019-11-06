@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+
+    <!-- links -->
+    <link rel="stylesheet" type="text/css" href="eggys-diner.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a304ad7e33.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><img src="img/EGGYS_LOGO-red.png" height="60" style="padding: 0;" alt="Eggy's employee smiling holding plates of food"/></a>
+        <a href="index.html#locations" style="padding: 35px 0px">Locations</a>
+        <a href="about.html" style="padding: 35px 0px">About</a>
+        <div class="dropdown">
+            <button class="dropbtn" style="padding: 35px 0px">Menus
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="menu-chi.html">Chicago</a>
+                <a href="menu-msp.html">Minneapolis</a>
+            </div>
+        </div>
+        <a href="gift-cards.html" style="padding: 35px 0px">Gift Cards</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- happy eggys columns -->
+<!--    <div class="flex-container">-->
+<!--        <div class="about-top"><img src="img/happy eggys.jpg" width="50%"/></div>-->
+<!--        <div class="about-top"><h3 style="text-align: center">We are your urban family diner.</h3>-->
+<!--            <p style="text-align: center">Eggy’s is an urban, hip, neighborhood café serving all-day breakfast, lunch,-->
+<!--                family-style dinner & baked goods made from seasonal, local ingredients.</p></div>-->
+<!--    </div>-->
+
+    <div class="big-img"><img src="img/happy-eggys.jpg"/>
+        <div class="left-on-img"><h2>We are your urban family diner.</h2>
+        <div class="left-on-img-red">Eggy’s is an urban, hip, neighborhood café serving all-day breakfast, lunch, family-style dinner & baked goods made from seasonal, local ingredients.</div>
+            <div class="left-on-img-red-p">Eggy’s is an urban, hip, neighborhood café serving all-day breakfast, lunch, family-style dinner & baked goods made from seasonal, local ingredients.</div>
+
+        </div></div>
+
+    <div class="divider" style="margin-bottom: 50px;"></div>
+
+
+    <!-- Container for the image gallery -->
+    <div class="h-underline" style="margin: 40px auto;">STAFF FAVORITES</div>
+    <p style="text-align: center; margin-top: -25px; margin-bottom: 30px">We asked some of our staff members to pick
+        their favorite items off the Eggy's Diner menu. Here are the top 6 answers:</p>
+
+    <div class="gallery-container">
+
+
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/edit/about-gallery/eggys_web005-edit.jpg" style="width:100%"
+                     onclick="currentSlide(1)" alt="Chocolate Chip Pancakes">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/edit/about-gallery/eggys_web016-edit.jpg" style="width:100%"
+                     onclick="currentSlide(2)" alt="Eggy's Burger">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/edit/about-gallery/eggys_web019-edit.jpg" style="width:100%"
+                     onclick="currentSlide(3)" alt="Buffalo Chicken Sandwich">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/edit/about-gallery/eggys_web024-edit.jpg" style="width:100%"
+                     onclick="currentSlide(4)" alt="Apple Walnut Salad">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/edit/about-gallery/eggys_web027-edit.jpg" style="width:100%"
+                     onclick="currentSlide(5)" alt="Loaded Fries">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/edit/about-gallery/eggys_web034-edit.jpg" style="width:100%"
+                     onclick="currentSlide(6)" alt="Gyro Sandwich">
+            </div>
+        </div>
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+            <img src="img/edit/about-gallery/eggys_web005-edit.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/edit/about-gallery/eggys_web016-edit.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/edit/about-gallery/eggys_web019-edit.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/edit/about-gallery/eggys_web024-edit.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/edit/about-gallery/eggys_web027-edit.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/edit/about-gallery/eggys_web034-edit.jpg" style="width:100%">
+        </div>
+
+<!--        &lt;!&ndash; Next and previous buttons &ndash;&gt;-->
+<!--        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+<!--        <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+
+        <!-- Image text -->
+        <div class="caption-container" style="margin-top: -10px">
+            <p id="caption"></p>
+        </div>
+    </div>
+
+
+    <footer><p>©Eggy's Diner 2019</p></footer>
+</div> <!-- end of wrapper -->
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
+</body>
+</html>

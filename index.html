@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eggy's Diner</title>
+
+    <!-- links -->
+    <link rel="stylesheet" type="text/css" href="eggys-diner.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a304ad7e33.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><img src="img/EGGYS_LOGO-red.png" height="60" style="padding: 0;"
+                                                 alt="Eggy's Diner logo"/></a>
+        <a href="index.html#locations" style="padding: 35px 0px">Locations</a>
+        <a href="about.html" style="padding: 35px 0px">About</a>
+        <div class="dropdown">
+            <button class="dropbtn" style="padding: 35px 0px">Menus
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="menu-chi.html">Chicago</a>
+                <a href="menu-msp.html">Minneapolis</a>
+            </div>
+        </div>
+        <a href="gift-cards.html" style="padding: 35px 0px">Gift Cards</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- waffles -->
+    <div class="big-img"><img src="img/edit/eggys_web012-edit2.jpg"
+                              alt="Waffles on a plate with fruit and powdered sugar"/>
+        <div class="centered"><h1>Urban comfort food.</h1></div>
+    </div>
+
+    <!-- down arrow -->
+    <!--    <a href="index.html#locations"><h1 style="position: relative; top: -110px;"><i class="fas fa-chevron-down" style="font-size: 30px"></i></h1></a>-->
+
+    <div class="divider"></div>
+
+    <!-- start of locations-->
+    <a name="locations"></a>
+    <div class="h-underline" style="margin: 50px auto;">2 DINER LOCATIONS:</div>
+    <div class="flex-container" style="margin-top: -100px">
+
+        <!-- Chicago container-->
+        <div class="location">
+
+            <!-- photo and location name-->
+            <img src="img/edit/chi-edit.jpg" alt="Inside of Eggy's Diner Chicago"/>
+            <div class="centered"><h2 style="font-size: 25px; margin-bottom: -50px; text-align: center">EGGY'S<br></h2>
+                <h2>CHICAGO</h2></div>
+
+            <!-- location info-->
+            <p><b>ADDRESS</b><br>
+                333 East Benton Place, Suite 301<br>
+                Chicago, IL 60601</p>
+            <p><b>PHONE</b><br>
+                773.234.EGGY (3449)</p>
+            <p><b>HOURS</b><br>
+                Monday-Sunday: 7:00am-3:00pm</p>
+
+            <!-- buttons -->
+            <div class="row">
+                <div class="column" style="width: 25%">
+                    <a href="menu-chi.html">
+                        <div class="red-button">MENU</div>
+                    </a>
+                </div>
+                <a href="https://www.instagram.com/eggyschi/" target="_blank">
+                    <div class="social">
+                        <div class="column" style="width: 10%"><i class="fab fa-instagram"></i></div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/EggysChicago/" target="_blank">
+                    <div class="social">
+                        <div class="column" style="width: 10%"><i class="fab fa-facebook-square"></i></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d742.5882007646873!2d-87.6190309!3d41.8852691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca801e50dff%3A0xd89b461e675f2220!2sEggy&#39;s%20Diner!5e0!3m2!1sen!2sus!4v1571886159241!5m2!1sen!2sus"
+                    width="100%" height="350" frameborder="0" style="border:0; padding-top: 30px"
+                    allowfullscreen=""></iframe>
+
+            <!-- directions button -->
+            <a href="https://www.google.com/maps?ll=41.88533,-87.618823&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=15608146029979836960"
+               target="_blank">
+                <div class="chill-button">GET DIRECTIONS<i class="fas fa-chevron-right" style="margin-left: 10px"></i>
+                </div>
+            </a>
+        </div>
+
+        <!-- Minneapolis container -->
+        <div class="location">
+            <img src="img/edit/msp-edit.jpg" alt="Inside of Eggy's Diner Minneapolis"/>
+            <div class="centered"><h2 style="font-size: 25px; margin-bottom: -50px; text-align: center">EGGY'S<br></h2>
+                <h2>MINNEAPOLIS</h2></div>
+
+            <!-- location info-->
+            <p><b>ADDRESS</b><br>
+                120 14th Street West<br>
+                Minneapolis, MN 55403</p>
+            <p><b>PHONE</b><br>
+                763.310.EGGY (3449)</p>
+            <p><b>HOURS</b><br>
+                Monday-Sunday: 7:00am-3:00pm</p>
+
+            <!-- buttons -->
+            <div class="row">
+                <div class="column" style="width: 25%">
+                    <a href="menu-msp.html">
+                        <div class="red-button">MENU</div>
+                    </a>
+                </div>
+                <a href="https://www.instagram.com/eggysmn/" target="_blank">
+                    <div class="social">
+                        <div class="column" style="width: 10%"><i class="fab fa-instagram"></i></div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/eggysdiner/" target="_blank">
+                    <div class="social">
+                        <div class="column" style="width: 10%"><i class="fab fa-facebook-square"></i></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d352.8442643649838!2d-93.2806952!3d44.9689897!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b332bf7d5ad42b%3A0x4242543009f6ffda!2sEggy&#39;s%20Minneapolis!5e0!3m2!1sen!2sus!4v1571889298547!5m2!1sen!2sus"
+                    width="100%" height="350" frameborder="0" style="border:0; padding-top: 30px"
+                    allowfullscreen=""></iframe>
+
+            <!-- directions button -->
+            <a href="https://www.google.com/maps/place/Eggy's+Minneapolis/@44.96891,-93.28049,19z/data=!4m5!3m4!1s0x0:0x4242543009f6ffda!8m2!3d44.9689103!4d-93.2804904?hl=en"
+               target="_blank">
+                <div class="chill-button">GET DIRECTIONS<i class="fas fa-chevron-right" style="margin-left: 10px"></i>
+                </div>
+            </a>
+        </div>
+
+        <footer><p style="position: relative; top: -15px">©Eggy's Diner 2019</p></footer>
+    </div> <!-- end of locations -->
+</div> <!-- end of wrapper -->
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
